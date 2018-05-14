@@ -1,0 +1,50 @@
+<% include ../partials/header %>
+	<div class="container">
+		<% if (authData.email == 'thanh.tran3k@gmail.com') { %>
+
+		<h1>Genres</h1>
+		<p>In this page, you can find your favourite genre. You can also add your own genre. Click on the blue "Add a genre" button bellow. After finished adding, the genre you just added will be showed bellow. Have fun!</p>
+		<a class="btn btn-primary" href="/genres/add">Add a genre</a>
+		<a class="btn btn-success" href="/">Back to the home page</a>
+
+		<% } else {%>
+
+    	<strong>Have a good time</strong>
+
+    	<% } %>
+
+		<table class="table table-striped my-table">
+			<thead class="thead-dark">
+				<tr>
+					<th>Name</th>
+
+					<% if (authData.email == 'thanh.tran3k@gmail.com') { %>
+					
+					<th>Action</th>
+					<th></th>
+
+					<% } %>
+				</tr>
+			</thead>
+
+			<tbody>
+				<% for(var i = 0; i < genres.length; i++){ %>
+					<tr>
+						<td><%= genres[i].name %></td>
+
+					<% if (authData.email == 'thanh.tran3k@gmail.com') { %>
+
+						<td>
+							<a href="/genres/edit/<%= genres[i].id %>" class="btn btn-primary">Edit</a>
+						</td>
+						<td>
+							<a data-id="<%= genres[i].id %>" class="btn btn-danger delete-genre">Delete</a>
+						</td>
+
+					<% } %>
+					</tr>
+				<% } %>
+			</tbody>
+		</table>
+	</div>
+<% include ../partials/footer %>

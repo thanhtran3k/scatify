@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+	<div class="container">		
+		<h1>Edit Genres</h1>
+
+		<p>* NOTE: Now in this page you can edit your genre easily. All you have to do is type the new name into the "New name" box, then click on the "Finish" button to edit or "Cancel" if you change your mind. We have the previous name to compare.</p>
+
+		<form method="post" action="/genres/edit/<%= id %>" id="genre-form">
+			<strong>Previous Name: </strong>
+      		<input type="text" class="form-control" value="<%= genre.name %>" disabled>
+
+      		<strong>New name: </strong>
+      		<input type="text" class="form-control" placeholder="New Genre's name." name="name" required autofocus>
+
+      		<button type="submit" class="btn btn-primary">Finish</button>
+      		<a class="btn btn-danger" href="/genres">Cancel</a>
+		</form>
+	</div>
+<% include ../partials/footer %>

@@ -1,0 +1,14 @@
+<% include ../partials/header %>
+	<div class="container">
+		<a href="/albums" class="btn btn-default"> &#x25c2; Go Back</a>	
+		<h1>Add Genres</h1>
+		<p>* NOTE: You can add your favourite genre here. Just type the genre's name you like to the "name" box, then click on the blue "Submit" button to finish the job or click on the red "Cancel" button to return to the previous site.</p>
+		<form id="genre-form" method="post" action="/genres/add">
+			<strong>Name: </strong>
+      		<input type="text" id="inputEmail" class="form-control" placeholder="Genre's name." name="name" required autofocus>
+
+      		<button type="submit" class="btn btn-primary">Submit</button>
+      		<a class="btn btn-danger" href="/genres">Cancel</a>
+		</form>
+	</div>
+<% include ../partials/footer %>
