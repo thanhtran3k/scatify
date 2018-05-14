@@ -9,6 +9,7 @@ Welcome, this is Catto. I built this website with helps of NodeJS, ExpressJS fra
 4. To run the project: "npm start".
 5. The project runs on port 3000.
 6. The project is linking to my database on "https://firebase.google.com/". If you want to change my database to yours, just change the  variable "config" below to yours.
+
 var config = {
     //My config provided by firebase.
   };
