@@ -1,0 +1,27 @@
+{
+  "name": "scatify",
+  "version": "1.0.0",
+  "description": "Managing music album",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "author": "Thanh Tran",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "firebase": "*",
+    "morgan": "*",
+    "multer": "*",
+    "path": "*",
+    "serve-favicon": "*"
+  }
+}
