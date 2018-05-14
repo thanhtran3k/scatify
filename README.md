@@ -1,7 +1,9 @@
 # scatify
 Welcome, this is Catto. I built this basic website with helps of NodeJS, ExpressJS framework, EJS for the front-end and noSQL database Firebase.
 
-Read my notes below for new guys.
+- This is a albums sumarry website. You can read the infomations of the albums you love here, and then you can listen the whole albums on youtube.
+
+- Read my notes below for new guys.
 
 ===================MY NOTES===========================
 
