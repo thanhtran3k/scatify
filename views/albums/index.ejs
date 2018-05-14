@@ -1,0 +1,33 @@
+<% include ../partials/header %>
+	<div class="container">
+    <% if (authData.email == 'thanh.tran3k@gmail.com') { %>
+
+		<h1>Albums</h1>
+		<p>This page show all the albums you love. And if you want to add more albums to this page, just click on the "Add an album" bellow. After finished adding, the album you just added will be showed bellow. Have fun!</p>
+		<a class="btn btn-primary" href="/albums/add">Add an album</a>
+		<a class="btn btn-success" href="/">Back to the home page</a>
+    
+    <% } else {%>
+
+    <strong>Have a good time</strong>
+
+    <% } %>
+
+		<div class="row my-row">
+		<% for(var i = 0; i < albums.length; i++) { %>		
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+              	<div class="albums">
+              		<a href="/albums/details/<%= albums[i].id %>"><img class="card-img-top" src="/images/upload/<%= albums[i].cover %>" alt="Albums"></a>
+              	</div>
+                <div class="card-body">
+	                <h5 class="card-text"><%= albums[i].title %></h5>
+	                <p class="card-text">By: <%= albums[i].artist %></p>
+                </div>
+              </div>
+            </div>
+            
+        	<% } %>
+        </div>
+	</div>
+<% include ../partials/footer %>

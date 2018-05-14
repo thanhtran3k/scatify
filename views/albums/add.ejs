@@ -1,0 +1,58 @@
+<% include ../partials/header %>
+	<div class="container">
+		<h1>Add album</h1>
+		<p>* NOTE: All the fiels bellow is required. Please fill all of them. Then click on the "Submit" button to finish adding album or click on the "Red" one to cancel adding.</p>
+		<form enctype="multipart/form-data" method="post" action="/albums/add">
+			<div class="form-group">
+				<strong>Artist: </strong>
+				<input type="text" class="form-control" name="artist" placeholder="Artist Name.">
+			</div>
+
+			<div class="form-group">
+				<strong>Album title: </strong>
+				<input type="text" class="form-control" name="title" placeholder="Album title.">
+			</div>
+			
+			<div class="form-group">
+				<strong>Genre</strong>
+				<select name="genre" class="form-control">
+					<% for(var i = 0; i < genres.length; i++) { %>
+						<option value="<%= genres[i].name %>"><%= genres[i].name %></option>
+				<% } %>
+				</select>
+			</div>
+			<div class="form-group">
+				<strong>Album infomations: </strong>
+				<textarea rows="5" class="form-control" name="info" placeholder="Album infomations."></textarea>
+			</div>
+
+			<div class="form-group">
+				<strong>Release year: </strong>
+				<input type="text" class="form-control" name="year" placeholder="Release year.">
+			</div>
+
+			<div class="form-group">
+				<strong>Record label: </strong>
+				<input type="text" class="form-control" name="label" placeholder="Record label.">
+			</div>
+
+			<div class="form-group">
+				<strong>Number of Tracks: </strong>
+				<input type="text" class="form-control" name="tracks" placeholder="Numbers of Tracks.">
+			</div>
+
+			<div class="form-group">
+				<strong>Watch on Youtube: </strong>
+				<input type="text" class="form-control" name="linktoyoutube" placeholder="Link to the album on Youtube.">
+			</div>
+
+			<div class="form-group">
+				<strong>Album cover: </strong>
+				<input type="file" class="form-control" name="cover">
+			</div>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+			<a class="btn btn-danger" href="/albums">Cancel</a>
+		</form>
+	</div>
+<% include ../partials/footer %>

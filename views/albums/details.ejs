@@ -1,0 +1,45 @@
+<% include ../partials/header %>
+	<div class="container">
+		<a href="/albums" class="btn btn-default"> &#x25c2; Go Back</a>
+
+		<h1><%=album.artist %> - <%=album.title %></h1>		
+		<div class="row album">
+			<div class="col-md-4">
+				<img src="/images/upload/<%= album.cover %>">
+			</div>
+			<div class="col-md-8">
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Artist:</strong> <%= album.artist %></li>
+					<li class="list-group-item"><strong>Album:</strong> <%= album.title %></li>
+					<li class="list-group-item"><strong>Genre:</strong> <%= album.genre %></li>
+					<li class="list-group-item"><strong>Release Year:</strong> <%= album.year %></li>
+					<li class="list-group-item"><strong>Label:</strong> <%= album.label %></li>
+					<li class="list-group-item"><strong>Tracks:</strong> <%= album.tracks %></li>
+					<li class="list-group-item"><strong>Watch on Youtube:</strong> <a href="<%= album.linktoyoutube %>"><%= album.linktoyoutube %></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<hr />
+
+		<div class="row">
+			<div class="col-md-12">
+				<h4>Album Info: </h4>
+				<p><%= album.info %></p>
+			</div>
+		</div>
+
+		<hr />
+		<% if (authData.email == 'thanh.tran3k@gmail.com') { %>
+
+		<a href="/albums/edit/<%= id %>" class="btn btn-success">Edit</a> 
+		<a data-id="<%= id %>" class="btn btn-danger delete-album">Delete</a>
+
+		<% } else {%>
+
+		<strong>Have a good time</strong>
+
+		<% } %>
+		
+	</div>
+<% include ../partials/footer %>
