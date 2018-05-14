@@ -11,7 +11,7 @@ Welcome, this is Catto. I built this basic website with helps of NodeJS, Express
 
 4. To run the project: "npm start".
 
-5. The project runs on port 3000.
+5. The project runs on PORT 3000.
 
 6. The project is linking to my database on "https://firebase.google.com/". If you want to change the link to my database to yours, just change the  variable "config" below to yours.
 
