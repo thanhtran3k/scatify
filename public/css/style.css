@@ -1,0 +1,35 @@
+h5.my-0.mr-md-auto.font-weight-normal {
+	color: black;
+	margin-left: 250px;
+}
+
+h5.my-0.mr-md-auto.font-weight-normal a{
+	color: black;
+	text-decoration: none;
+}
+
+#genre-form .btn{
+	margin-top: 15px;
+}
+
+.table.table-striped.my-table{
+	margin-top: 40px;
+}
+
+.row.my-row{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.albums img:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.row.album img{
+	width: 100%;
+}
+
+.row.album {
+	margin-top: 30px;
+}

@@ -1,0 +1,30 @@
+#form-login{
+  margin: 0 auto;
+  max-width: 450px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#inputPassword{
+  margin-top: 5px;
+}
+
+.checkbox{
+  margin-top: 15px;
+}
+
+#form-signup{
+  margin: 0 auto;
+  max-width: 450px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.catto-logo {
+	text-align: center;
+}
+
+.btn-login {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
