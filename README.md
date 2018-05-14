@@ -27,6 +27,6 @@ var config = {
   
 7. I used my persional account as administrator account. To use all the functions available change or remove the "authData.email == 'thanh.tran3k@gmail.com'" in the front-end pages if you see.
 
-8. I regret not using camelCase in this project. Forgive me if it makes feel bad. I will change when i have free time.
+8. I regret not using camelCase in this project. Forgive me if you don't like it. I will change when i have free time.
 
 Finally, if you have any questions, contact me.
