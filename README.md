@@ -16,7 +16,7 @@ Welcome, this is Catto. I built this basic website with helps of NodeJS, Express
 6. The project is linking to my database on "https://firebase.google.com/". If you want to change the link to my database to yours, just change the  variable "config" below to yours.
 
 var config = {
-    //My config provided by firebase.
+    //My configs are provided by firebase.
   };
   
   Read the docs of firebase to learn more.
