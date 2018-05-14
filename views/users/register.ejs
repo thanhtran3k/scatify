@@ -1,0 +1,58 @@
+<% include ../partials/header %>
+  <div id="form-signup">
+    <div class="catto-logo">
+    	<a href="/"><img class="mb-4" src="/images/logo.png" alt="" width="72" height="72"></a>
+    </div>
+  	<form method="post" action="/users/register">
+        
+        <h1 class="text-center h3 mb-3 font-weight-normal">Please sign up</h1>
+        <hr/>
+
+        <h3 class="text-center">Required info</h3>
+
+		<div class="form-group">
+	        <label><strong>First name: </strong></label>
+	        <input type="text" id="firstname" name="firstname" class="form-control" placeholder="First name" required>
+        </div>
+
+        <div class="form-group">
+	        <label><strong>Last name: </strong></label>
+	        <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last name" required>
+        </div>
+
+        <div class="form-group">
+	        <label><strong>Email: </strong></label>
+	        <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required>
+        </div>
+
+		<div class="form-group">
+	        <label><strong>Password: </strong></label>
+	        <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+        </div>
+
+        <div class="form-group">
+	        <label><strong>Confirm password: </strong></label>
+	        <input type="password" id="password2" name="password2" class="form-control" placeholder="Confirm password" required>
+        </div>
+
+        <h3 class="text-center">Optional info</h3>
+
+        <div class="form-group">
+	        <label><strong>Location: </strong></label>
+	        <input type="text" id="location" name="location" class="form-control" placeholder="Your location" >
+        </div>
+
+        <div class="form-group">
+	        <label><strong>Favourite genre: </strong></label>
+	        <input type="text" id="fav_genres" name="fav_genres" class="form-control" placeholder="Your favourite genres" >
+        </div>
+
+        <div class="form-group">
+	        <label><strong>Favourite artist: </strong></label>
+	        <input type="text" id="fav_artists" name="fav_artists" class="form-control" placeholder="Your favourite artist" >
+        </div>        
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>      
+      </form>
+  </div>
+<% include ../partials/footer %>
