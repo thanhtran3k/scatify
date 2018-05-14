@@ -1,7 +1,7 @@
 # scatify
 Welcome, this is Catto. I built this website with helps of NodeJS, ExpressJS framework, EJS for the front-end and noSQL database Firebase.
 
-====NOTE====
+===================MY NOTES===========================
 
 1. Download my project to your computer.
 2. Open Git Bash.
@@ -17,3 +17,5 @@ var config = {
   Read the docs of firebase to learn more.
   
 7. I used my persional account as administrator account. To use all the functions available change or remove the "authData.email == 'thanh.tran3k@gmail.com'" in the front-end pages if you see.
+
+Finally, if you have any questions, contact me.
