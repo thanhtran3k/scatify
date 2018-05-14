@@ -1,5 +1,5 @@
 # scatify
-Welcome, this is Catto. I built this website with helps of NodeJS, ExpressJS framework, EJS for the front-end and noSQL database Firebase.
+Welcome, this is Catto. I built this basic website with helps of NodeJS, ExpressJS framework, EJS for the front-end and noSQL database Firebase.
 
 ===================MY NOTES===========================
 
