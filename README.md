@@ -5,7 +5,7 @@ Welcome, this is Catto. I built this basic website with helps of NodeJS, Express
 
 - Read my notes below for new guys.
 
-===================MY NOTES===========================
+# Quick start
 
 1. Download my project to your computer.
 
